@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "GrahamCampbell\\Parse\\": "src/"
+            "Meetio\\Parse\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GrahamCampbell\\Tests\\Parse\\": "tests/"
+            "Meetio\\Tests\\Parse\\": "tests/"
         }
     },
     "minimum-stability": "dev",

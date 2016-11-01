@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GrahamCampbell\Tests\Parse;
+namespace Meetio\Tests\Parse;
 
-use GrahamCampbell\TestBench\AbstractLaravelTestCase as TestCase;
+use Meetio\TestBench\AbstractLaravelTestCase as TestCase;
 
 /**
  * This is the abstract test case class.
@@ -27,6 +27,6 @@ abstract class AbstractTestCase extends TestCase
      */
     protected function getServiceProviderClass()
     {
-        return 'GrahamCampbell\Parse\ParseServiceProvider';
+        return 'Meetio\Parse\ParseServiceProvider';
     }
 }

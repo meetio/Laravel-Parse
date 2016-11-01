@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GrahamCampbell\Tests\Parse;
+namespace Meetio\Tests\Parse;
 
-use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
+use Meetio\TestBench\Traits\ServiceProviderTestCaseTrait;
 
 /**
  * This is the service provider test class.

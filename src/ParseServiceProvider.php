@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GrahamCampbell\Parse;
+namespace Meetio\Parse;
 
 use Illuminate\Support\ServiceProvider;
 use Parse\ParseClient;
@@ -35,14 +35,14 @@ class ParseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('graham-campbell/parse', 'graham-campbell/parse', __DIR__);
+        $this->package('meetio/parse', 'meetio/parse', __DIR__);
 
         ParseClient::initialize(
-            $this->app->config->get('graham-campbell/parse::app_id'),
-            $this->app->config->get('graham-campbell/parse::rest_key'),
-            $this->app->config->get('graham-campbell/parse::master_key')
+            $this->app->config->get('meetio/parse::app_id'),
+            $this->app->config->get('meetio/parse::rest_key'),
+            $this->app->config->get('meetio/parse::master_key')
         );
-        ParseClient::setServerURL($this->app->config->get('graham-campbell/parse::server'), $this->app->config->get('graham-campbell/parse::endpoint'));
+        ParseClient::setServerURL($this->app->config->get('meetio/parse::server'), $this->app->config->get('meetio/parse::endpoint'));
     }
 
     /**
