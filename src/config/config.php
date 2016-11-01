@@ -44,4 +44,17 @@ return [
 
     'master_key' => 'your-master-key',
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Parse Server
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify your own parse server.
+    |
+    */
+
+    'server' => 'https://my-parse-server.com',
+    'endpoint' => 'parse',
+
 ];

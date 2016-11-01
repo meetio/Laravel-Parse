@@ -42,6 +42,7 @@ class ParseServiceProvider extends ServiceProvider
             $this->app->config->get('graham-campbell/parse::rest_key'),
             $this->app->config->get('graham-campbell/parse::master_key')
         );
+        ParseClient::setServerURL($this->app->config->get('graham-campbell/parse::server'), $this->app->config->get('graham-campbell/parse::endpoint'));
     }
 
     /**
